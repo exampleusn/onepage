@@ -1,0 +1,195 @@
+*,
+ html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", 'Times New Roman';
+}
+
+.fContainer {
+    display: flex;
+    background: linear-gradient(lightpink, lightblue);
+    /*justify-content: center;
+    align-items: center;*/
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 1200px;
+    height: 50px;
+    background-color: black;
+    box-shadow: 1 4px 1 rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstname {
+    color: aliceblue;
+    font-weight: 700;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    to {top: 30px;}
+    from {top: 5px;}
+}
+
+.lastname {
+    color: crimson;
+    font-weight: 400;
+    padding-left: 4px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    to {top: 30px;}
+    from {top: 5px;}
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header >li {
+    list-style-type: none;
+    padding: 15px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    to {top: 30px;}
+    from {top: 5px;}
+}
+
+.header >li >a {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header >li >a:hover {
+    color: crimson;
+    transition: all .2s ease-in;
+}
+
+.header >li >img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.header >li >img:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 65px;
+}
+
+.section {
+    padding: 50px 0;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.banner {
+    padding: 120px 180px;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    top: 15%;
+    left: -5%;
+    animation-name: follow;
+    animation-duration: 3s;
+}
+
+@keyframes follow {
+    from { color: lightpink; left: 300px;};
+    to {color: black; right: 0px;}
+}
+
+
+button {
+    padding: 10px 30px;
+    font-size: 18px;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    border-color: grey;
+    background: linear-gradient(crimson, white);
+}
+
+.banner2 {
+    padding: 120px 180px;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    animation-name: examplee;
+    animation-duration: 3s;
+}
+
+@keyframes examplee {
+    from { color: lightpink; top: 250px;};
+    to {color: black; top: 0px;}
+}
+
+.banner2 >img {
+    position: absolute;
+    top: 30%;
+    right: 85%;
+    border-radius: 100px;
+}
+
+table {
+    padding: 10px 0;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    animation-name: forit;
+    animation-duration: 2s;
+}
+
+@keyframes forit {
+    from { color: lightpink; top: 300px;};
+    to {color: black; top: 0px;}
+}
+
+.table , th, td {
+    border: 1px solid darkslategray;
+    background-color: aliceblue;
+    font-size: 15px;
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    padding: 25px;
+    font-size: 30px ;
+    text-align: center;
+    color: crimson;
+  }
